@@ -10,10 +10,10 @@ import chat from './reducers';
 const store = createStore(chat);
 
 ReactDOM.render(
-  <React.StrictMode>
+  document.getElementById('root'),<React.StrictMode>
     <Provider>
       <App />
     </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
+  
 );

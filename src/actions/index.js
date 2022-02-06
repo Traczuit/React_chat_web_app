@@ -1,4 +1,4 @@
-import * as types from '..constants/ActionTypes';
+import * as types from '../constants/ActionTypes';
 
 let nextMessageId = 0;
 let nextUserId = 0;
@@ -17,7 +17,7 @@ export const addUser = name => ({
 });
 
 export const messageRecieved = (message, author) => ({
-    type: types.MESSAGE_RECIEVED,
+    type: types.MESSAGE_RECEIVED,
     id: nextMessageId++,
     message,
     author
